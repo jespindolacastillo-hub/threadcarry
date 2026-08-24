@@ -89,10 +89,15 @@ una carpeta sincronizada (Dropbox/Drive/OneDrive/Syncthing).
 - [x] Estado vivo de sesión (`capture` / `resume`)
 - [x] `whatdid` — memoria de trabajo del programador
 - [x] Bitácora del agente con detección de desviación
-- [ ] `install.sh` de 1 línea (hooks automáticos para Claude Code)
-- [ ] Adaptadores Codex / Gemini / Cursor
+- [x] `install.sh` de 1 línea (hooks automáticos para Claude Code)
+- [x] Adaptadores documentados para Codex / Gemini / Cursor (ver `ADAPTADORES.md`)
 - [ ] Resolución de conflictos entre máquinas
 - [ ] Premium: multi-máquina + alertas + histórico semántico ($12-24/año)
+
+## Documentación
+
+- [ADAPTADORES.md](ADAPTADORES.md) — cómo integrar threadcarry con Claude Code,
+  Codex CLI, Gemini CLI, Cursor y cualquier otro agente
 
 ## Licencia
 
