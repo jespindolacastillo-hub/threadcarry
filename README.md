@@ -51,6 +51,26 @@ Y con la **bitácora del agente**:
 | `threadcarry agentlog --diff` | Cierra el turno: qué tocó, qué quedó a medias, qué se desvió |
 | `threadcarry demo` | Todo junto — la memoria de trabajo del programador |
 
+## Demo real (salida auténtica)
+
+`whatdid` cruzando 15+ repos reales:
+
+```
+📅 Lo que hiciste en los últimos 1 día(s) — hoy Monday 24 de August, 2026
+
+✅ PROYECTOS DONDE TRABAJASTE:
+  📁 proyecto-alpha — 12 commits: fix(bpm) auditoría E2E, docs(context) playbook…
+  📁 proyecto-beta — 5 commits: feat: dashboard, fix: encodings…
+  📁 threadcarry — 2 commits: feat: continuidad entre máquinas…
+
+⚠️ QUEDÓ SIN COMMITEAR (puede ser de otra máquina):
+  • proyecto-gamma: 6 archivos — index.html, netlify.toml, copilot.mjs…
+
+⏭️ DÓNDE QUEDÓ LA ÚLTIMA SESIÓN:
+  ⏭️ Sesión anterior: mi-laptop · hace 2 h · rama feat/auditoria
+  🔧 En progreso: corrigiendo los 5 fixes de la auditoría E2E
+```
+
 ## Cómo funciona
 
 Un solo archivo de estado (`<workspace>/.continuity/state.json` + `agent-log.json`)

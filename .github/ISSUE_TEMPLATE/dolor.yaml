@@ -1,0 +1,30 @@
+name: 💡 Reportar un dolor real
+description: Cuéntanos el problema de continuidad/memoria que te pasa con tu agente — esto define el roadmap
+title: "[dolor] "
+labels: ["feedback", "roadmap"]
+body:
+  - type: textarea
+    id: dolor
+    attributes:
+      label: ¿Qué dolor tienes con tu agente de IA?
+      description: "Ej: 'el agente no recuerda qué estaba haciendo al cambiar de máquina', 'tocó archivos que no pedí y no me enteré'"
+    validations:
+      required: true
+  - type: dropdown
+    id: agentes
+    attributes:
+      label: ¿Qué agentes usas?
+      multiple: true
+      options:
+        - Claude Code
+        - Codex CLI
+        - Gemini CLI
+        - Cursor
+        - Otro
+    validations:
+      required: true
+  - type: input
+    id: maquinas
+    attributes:
+      label: ¿Cuántas máquinas usas para trabajar?
+      placeholder: "1 / 2 / 3+"
